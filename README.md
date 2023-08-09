@@ -71,7 +71,7 @@ sleep 20
 systemctl restart networking.service
 ```
 
-# MAKE IT EXECUTABLE
+#MAKE IT EXECUTABLE
 ```
 chmod +x /usr/bin/network-rs.sh
 ```
