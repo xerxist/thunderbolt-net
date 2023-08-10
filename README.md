@@ -12,10 +12,6 @@ thunderbolt-net
 
 RESTART THE NODE
 
-GET THE MAC ADDRESSES
-
-When connected do "ip a" and get the mac address from each nodes thunderbolt0. Use those in the 70-thunderbolt0.link
-
 GET THE PCI PATH FOR EACH NODE - Use those in the 70-thunderbolt0.link
 ```
 udevadm info /sys/class/net/thunderbolt0 | grep ID_PATH
@@ -32,7 +28,6 @@ Path=pci-0000:00:0d.3
 Driver=thunderbolt-net
 [Link]
 MACAddressPolicy=none
-MACAddress=00:00:00:00:00:00 
 Name=en05
 ```
 NODE2
@@ -42,12 +37,7 @@ Path=pci-0000:00:0d.3
 Driver=thunderbolt-net
 [Link]
 MACAddressPolicy=none
-MACAddress=00:00:00:00:00:00
 Name=en05
-```
-RUN
-```
-update-initramfs -k all -u
 ```
 
 RESTART THE NODES
