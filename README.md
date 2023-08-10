@@ -17,7 +17,7 @@ GET THE PCI PATH FOR EACH NODE - Use those in the 70-thunderbolt0.link
 udevadm info /sys/class/net/thunderbolt0 | grep ID_PATH
 ```
 
-CREATE LINK for the ETHNERNET DEVICE for EACH NODE and use the PCI PATH and MAC ON EACH NODES Config.
+CREATE LINK for the ETHERNET DEVICE for EACH NODE and use the PCI PATH and MAC ON EACH NODES Config.
 ```
 nano /etc/systemd/network/70-thunderbolt0.link
 ```
