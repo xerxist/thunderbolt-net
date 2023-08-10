@@ -1,4 +1,4 @@
-# Thunderbolt Network on Proxmox 8.0.4
+# Thunderbolt Node to Node/P2P Network on Proxmox 8.0.4
 
 
 LOAD THE MODULES AT BOOT 
